@@ -23,5 +23,5 @@ class Lyric(models.Model):
     song_id = models.ForeignKey(Song,on_delete=models.CASCADE)
     content = models.CharField(max_length=3000)
 
-    def __str___(self):
-        return self.song_id.title+ "'s lyrics"
+    def __str__(self):
+        return self.song_id.title+ " lyrics"
