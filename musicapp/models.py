@@ -13,7 +13,7 @@ class Artiste(models.Model):
 class Song(models.Model):
     artiste_id = models.ForeignKey(Artiste,on_delete=models.CASCADE)
     title = models.CharField(max_length=50)
-    date_released = models.DateField('date_released')
+    date_released = models.DateField()
     likes = models.IntegerField()
 
     def __str__(self):
